@@ -1,4 +1,4 @@
-# ReadMe - Explication du Code Probleme 1
+# ReadMe - Explication du Code Probleme 2
 
 ## Structure du Code
 
@@ -104,7 +104,7 @@ BEGIN
         Write("Produit scalaire des vecteurs ", v1, " et ", v2, " : ", ps);
 
         // Vérifie si les vecteurs sont orthogonaux
-        IF ps = 0 THEN
+        IF (ps = 0) THEN
             Write("Les vecteurs ", v1, " et ", v2, " sont orthogonaux.")
         ELSE
             Write("Les vecteurs ", v1, " et ", v2, " ne sont pas orthogonaux.")
@@ -113,3 +113,42 @@ BEGIN
 END
 
 ```
+
+# Explication du Code Probleme 1
+
+## Objectif
+
+L'algorithme `sum_of_distinct_elements` a pour objectif de trouver la somme de tous les éléments distincts de deux ensembles donnés.
+
+## Entrées
+
+1. La taille du premier ensemble (`n1`).
+2. Les éléments du premier ensemble (`set1`).
+3. La taille du deuxième ensemble (`n2`).
+4. Les éléments du deuxième ensemble (`set2`).
+
+## Sortie
+
+La somme de tous les éléments distincts présents dans l'un ou l'autre des ensembles donnés.
+
+## Fonctionnement
+
+1. L'utilisateur est invité à entrer la taille du premier ensemble (`n1`) suivi des éléments de cet ensemble (`set1`).
+2. Ensuite, l'utilisateur est invité à entrer la taille du deuxième ensemble (`n2`) suivi des éléments de cet ensemble (`set2`).
+3. La somme (`sum`) est initialisée à 0.
+4. La première boucle parcourt les éléments du premier ensemble (`set1`) et ajoute les éléments distincts à la somme.
+5. La deuxième boucle parcourt les éléments du deuxième ensemble (`set2`) et ajoute les éléments distincts à la somme.
+6. La somme totale des éléments distincts est affichée à la fin de l'algorithme.
+
+## Exemple d'Utilisation
+
+### Entrée
+
+Entre la taille du premier ensemble : 4
+3 1 7 9
+Entre la taille du deuxième ensemble : 5
+2 4 1 9 3
+
+### Sortie
+
+Somme des éléments distincts : 13 (éléments distincts 4, 7, 2)
